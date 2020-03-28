@@ -23,3 +23,13 @@ td {
 #newBoard p{
     margin: 0;
 }
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.death {
+    background-color: black;
+}

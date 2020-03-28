@@ -55,16 +55,27 @@ function randBoard(){
     for (let i =0; i< board.length; i++ ){
         for(let j =0; j<board[0].length; j++){
             if (colorBoard[k] >= 16 ){
-                board[i][j].style.backgroundColor = first;
+                board[i][j].classList.add( first);
             } else if (colorBoard[k] < 16 && colorBoard[k] >= 8){
-                board[i][j].style.backgroundColor = second;
+                board[i][j].classList.add(second);
             } else if(colorBoard[k] === 0){
-                board[i][j].style.backgroundColor = "black";
+                board[i][j].classList.add("death");
             }
             k++;
         }
     }
-} 
     
+} 
 
+/*function randNums(){
+    let board = []
+    let countF = 0;
+    let countS = 0;
+    let count  = 
+
+}*/
+    
+// adding interativity 
+var ranBtn = document.querySelector("#newBoard");
+ranBtn.addEventListener("click", randBoard());
 
