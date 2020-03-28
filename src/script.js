@@ -54,6 +54,7 @@ function randBoard(){
     let k = 0;
     for (let i =0; i< board.length; i++ ){
         for(let j =0; j<board[0].length; j++){
+            board[i][j].removeAttribute("class");
             if (colorBoard[k] >= 16 ){
                 board[i][j].classList.add( first);
             } else if (colorBoard[k] < 16 && colorBoard[k] >= 8){
@@ -64,7 +65,7 @@ function randBoard(){
             k++;
         }
     }
-    
+    console.log(colorBoard);
 } 
 
 /*function randNums(){
@@ -77,5 +78,5 @@ function randBoard(){
     
 // adding interativity 
 var ranBtn = document.querySelector("#newBoard");
-ranBtn.addEventListener("click", randBoard());
+ranBtn.addEventListener("click", randBoard);
 
