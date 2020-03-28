@@ -1,10 +1,8 @@
 class Cell {
-    constructor(row, col){
+    constructor(row, col, type){
       this.row = row;
       this.col = col;
-      this.alive = false;
-      this.index = "" + row + col;
-      this.visible = false;
+      this.type = type;
     }
     
   
