@@ -41,19 +41,22 @@ function randBoard(){
         }
     }
 
-    let turn = document.querySelector(".first");
-    turn.classList.remove("blue");
-    turn.classList.remove("red");
+    let turn = document.querySelectorAll(".first");
+    for(let t of turn ){
+        t.classList.remove("blue");
+        t.classList.remove("red");
+    }
     // first determine blue or red goes first
     let sign = Math.floor(Math.random() * 2); // 0 blue, 1 red
     if (sign < 1){
-        turn.classList.add("blue");
         first = "blue";
         second = "red";
     } else {
-        turn.classList.add("red");
         first = "red";
         second = "blue";
+    }
+    for(let t of turn ){
+        t.classList.add(first);
     }
 
     // assign colors to each one based values in colorBoard

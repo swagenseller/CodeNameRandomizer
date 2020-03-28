@@ -61,12 +61,35 @@ td {
     align-self: center;
     justify-self: center;
 
+}
+.vert {
+    width: 20px;
+    height: 75px;
+}
+#topSquare{
     grid-column-start: col2;
     grid-column-end: col3;
     grid-row-start: row1;
     grid-row-end: row2;
 }
-
+#botSquare{
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row-start: row3;
+    grid-row-end: row4;
+}
+#rightSquare{
+    grid-column-start: col3;
+    grid-column-end: col-end;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
+#leftSquare{
+    grid-column-start: col1;
+    grid-column-end: col2;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
 .grid {
     display: grid;
     justify-content: center;
