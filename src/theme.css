@@ -1,8 +1,21 @@
+h1 {
+    text-align: center;
+}
+
 table {
     background-color: black;
     border: 20px solid black;
     border-radius: 5%;
+    width: 292px;
+    height: 292px;
+
+    justify-self: center;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row-start: row2;
+    grid-row-end: row3;
 }
+
 td {
     border: 2px solid black;
     border-radius: 10%;
@@ -12,12 +25,19 @@ td {
 }
 
 #newBoard {
-    margin: 10px 100px;
+    
     padding: 10px;
     background-color: gray;
     border-radius: 10%;
     width: 75px;
     height: 20px;
+
+    align-self: center;
+    justify-self: center;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row-start: row4;
+    grid-row-end: row-end;
 }
 
 #newBoard p{
@@ -25,11 +45,31 @@ td {
 }
 
 .red{
-    background-color: red;
+    background-color:#f03557;
 }
 .blue{
-    background-color: blue;
+    background-color: #199be2;
 }
 .death {
-    background-color: black;
+    background-color: #363648;
+}
+
+.first {
+    border-radius: 10%;
+    width: 75px;
+    height: 20px;
+    align-self: center;
+    justify-self: center;
+
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row-start: row1;
+    grid-row-end: row2;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: [col1] 80px [col2] 332px [col3] 80px [col-end];
+    grid-template-rows: [row1] 80px [row2] 332px [row3] 80px [row4] 100px [row-end];
 }

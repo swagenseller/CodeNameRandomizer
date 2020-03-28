@@ -40,12 +40,18 @@ function randBoard(){
             colorBoard.push(r);
         }
     }
+
+    let turn = document.querySelector(".first");
+    turn.classList.remove("blue");
+    turn.classList.remove("red");
     // first determine blue or red goes first
     let sign = Math.floor(Math.random() * 2); // 0 blue, 1 red
     if (sign < 1){
+        turn.classList.add("blue");
         first = "blue";
         second = "red";
     } else {
+        turn.classList.add("red");
         first = "red";
         second = "blue";
     }
