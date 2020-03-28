@@ -10,3 +10,16 @@ td {
     height: 50px;
     background-color: blanchedalmond;
 }
+
+#newBoard {
+    margin: 10px 100px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 10%;
+    width: 75px;
+    height: 20px;
+}
+
+#newBoard p{
+    margin: 0;
+}
